@@ -19,8 +19,11 @@ import com.student.entity.StudentAttendance;
 import com.student.service.StudentAttendanceService;
 import com.student.service.StudentService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api/student")
+@Tag(name = "Student Controller")
 public class StudentDashboardController {
     
     private final StudentService studentService;

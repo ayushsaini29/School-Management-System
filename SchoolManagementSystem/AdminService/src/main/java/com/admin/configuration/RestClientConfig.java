@@ -11,7 +11,7 @@ public class RestClientConfig {
 	@Bean
 	public RestClient restClient() {
 		RestClient restClient = RestClient.builder()
-				.baseUrl("http://localhost:9002")
+				.baseUrl("http://staff-service-env.eba-ubcppjqw.ap-southeast-1.elasticbeanstalk.com")
 				.build();
 		
 		return restClient;	
